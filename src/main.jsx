@@ -8,7 +8,7 @@ import AuthProvider from "./Context/AuthProvider";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AuthProvider>
-    <BrowserRouter>
+    <BrowserRouter  basename="/react-dashboard">
     <App />
     </BrowserRouter>
     </AuthProvider>
