@@ -14,7 +14,7 @@ function Sidebar({osb}) {
   }
 }
   return (
-    <div className={`fixed left-0 top-0 bottom-0  ${osb ? "w-[300px]" : "w-[0px]"} flex flex-col justify-between transition-all duration-300 bg-blue-900 overflow-hidden border-r`}>
+    <div className={`fixed left-0 top-0 bottom-0 z-50 ${osb ? "w-[300px]" : "w-[0px]"} flex flex-col justify-between transition-all duration-300 bg-blue-900 overflow-hidden border-r`}>
       <div className="flex flex-col ">
       <div className="flex items-center justify-center py-6 shrink-0 whitespace-nowrap mb-20">
       <h3 className="text-2xl text-red-600 font-bold">Nazz <span className="text-white">Code</span></h3>

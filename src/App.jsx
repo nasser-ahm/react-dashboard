@@ -6,10 +6,12 @@ import Login from "./Pages/login";
 import Register from "./Pages/Register";
 import Dashboardlayot from "./Pages/Dashboardlayot";
 import ProtectedRoute from "./protectedroutes/Protectedroute";
+import Orders from "./Pages/Orders";
+
+
 
 function App() {
 const [opensidebar, setopensidebar] = useState(true);
-  console.log("App rendered");
   return (
     <>
 
@@ -20,6 +22,7 @@ const [opensidebar, setopensidebar] = useState(true);
         <Route element={<Dashboardlayot osb={opensidebar} sosb={setopensidebar}/>}>
           <Route path="/" element={<Dashboard osb={opensidebar}/>} />
           <Route path="/products" element={<Products osb={opensidebar} />} />
+          <Route path="/Orders" element={<Orders osb={opensidebar}/>} />
         </Route>
         </Route>
       </Routes>
